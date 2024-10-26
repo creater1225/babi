@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(to left, aqua 10%, #081b29 50%);
+            background-size: 200% 100%;
+            background-position: left;
+            transition: background-position 5s ease;
+        }
+
+        body:hover {
+            background-position: right;
+            color: #081b29;
+        }
+
+        h2 {
+            color: rgb(255, 255, 255);
+            margin-left: 30px;
+            font-size: 35px;
+            cursor: pointer;
+            padding-left: 10px;
+            height: 40px;
+            border-radius: 20px;
+            width:215px;
+            transition: 1s;
+        }
+
+        h2:hover {
+            padding-bottom: 12px;
+            font-size: 40px;
+            margin-left: 120px;
+            padding-left: 20px;
+            color: #081b29;
+            height: 60px;
+        }
+
+        .e {
+            padding: 20px 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(to right, aqua 0%, #081b29 60%);
+            background-size: 200% 100%;
+            background-position: right;
+            transition: 1s ease;
+            border-radius: 4px;
+        }
+
+        .e:hover {
+            background-position: left;
+            color: #081b29;
+        }
+
+        ul {
+            display: flex;
+            margin-right: 20px;
+            list-style: none;
+        }
+
+        li {
+            margin-left: 50px;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            font-size: 20px;
+            transition: 1s;
+        }
+
+        a:hover {
+            color: #081b29;
+            font-size: 30px;
+        }
+
+        .h1 {
+            margin-bottom: 4px;
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        .p1 {
+            width: 100%;
+            max-width: 600px;
+            line-height: 30px;
+            font-size: 18px;
+            font-weight: bolder;
+        }
+
+        .d1 {
+            margin-top: 100px;
+            margin-left: 80px;
+            padding: 20px;
+            color: white;
+            background: linear-gradient(to right, aqua 0%, #081b29 60%);
+            background-size: 200% 100%;
+            background-position: right;
+            transition: 1s ease;
+            display: inline-block;
+            border-radius: 20px;
+            border: none;
+        }
+
+        .d1:hover {
+            background-position: left;
+            color: #081b29;
+            padding: 75px;
+        }
+
+        h3 {
+            font-size: 30px;
+            line-height: 50px;
+            margin-bottom: 15px;
+        }
+
+        .d2 {
+            display: inline-block;
+            margin-left: 50px;
+            margin-top: 50px;
+            text-align: center;
+            margin-left: 220px;
+        }
+
+        img {
+            border-radius: 20px;
+            height: 250px;
+            width: 200px;
+            cursor: pointer;
+            transition: .6s;
+            transform: rotateY(360deg);
+        }
+
+        img:hover {
+            opacity: 1;
+            height: 400px;
+            width: 300px;
+        }
+
+        .d3 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            margin-top: 200px;
+            padding-bottom:11px;
+            transition: 1s;
+            }
+            .d3:hover{
+                background-color: #081b29;
+            }
+
+
+        .l {
+            justify-content: center;
+            display: flex;
+            
+        }
+
+        .n {
+             margin-left: 80px;
+             font-size: 20px;
+             margin-top: 20px;
+             justify-content: center;
+             display: flex;
+           }
+
+        .n:hover {
+             color: rgb(255, 255, 0);
+             padding-bottom: 20px;
+             padding-top: 20px;
+             font-size: 32px;
+        }
+
+        /* MEDIA QUERIES FOR RESPONSIVENESS */
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 20px;
+                margin-left: 20px;
+            }
+
+            .e {
+                flex-direction: column;
+                align-items:center;
+                flex:1;
+            }
+
+            ul {
+                flex-direction: column;
+                margin-right: 0;
+                margin-top: 10px;
+            }
+
+            li {
+                margin-left: 0;
+                margin-bottom: 10px;
+            }
+
+            .d1 {
+                margin-left: 10px;
+                padding: 10px;
+                
+            }
+
+            .p1 {
+                font-size: 14px;
+                line-height: 25px;
+            }
+
+            .d2 img {
+                height: 200px;
+                width: 150px;
+                align-items: center;
+            }
+
+            .d3 {
+                flex-direction: column;
+                padding: 20px;
+                flex: 1;
+            }
+
+            .n {
+                margin: 10px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h2 {
+                font-size: 18px;
+                margin-left: 15px;
+            }
+
+            .d1 {
+                margin-left: 5px;
+            }
+
+            .p1 {
+                font-size: 12px;
+                width: 100%;
+                line-height: 20px;
+            }
+
+            .d2 img {
+                height: 150px;
+                width: 120px;
+            }
+
+            .n {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="e">
+        <h2>PORTFOLIO</h2>
+        <nav class="nav1">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Experience</a></li>
+                <li><a href="">Progress</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="d1">
+        <h1 class="h1">Hi, I'm Syed Ali Irfan</h1>
+        <h3>Frontend Developer</h3>
+        <p class="p1">I am a dedicated frontend developer with expertise in creating responsive, user-friendly websites using 
+            <strong>HTML</strong> and <strong>CSS</strong>. I focus on writing clean code, following best practices, 
+            and delivering seamless user experiences. Passionate about staying current with frontend trends, I am eager 
+            to contribute to projects that prioritize dynamic and accessible design.
+        </p>
+    </div>
+
+    <div class="d2">
+        <img src="k.jpg" alt="3D Character">
+    </div>
+
+    <div class="d3">
+        <footer>
+            <ul class="l">
+                <li><a class="n" href="https://www.instagram.com/">Instagram</a></li>
+                <li><a class="n" href="">Facebook</a></li>
+                <li><a class="n" href="">LinkedIn</a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>
